@@ -4,7 +4,7 @@ import Expense from "../models/expenses.model.js";
 export const getAllExpenses = async (req, res) => {
     try {
         const expenses = await Expense.find({});
-        return res.status(200).json(...expenses);
+        return res.status(200).json([...expenses]);
     } catch (error) {
         return res.status(500).json({ message: error.message });
     }
