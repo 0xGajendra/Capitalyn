@@ -9,7 +9,7 @@ const data = [{name: 'Page A', uv: 400, pv: 2400, amt: 2400}];
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("http://localhost:3000/api/expenses");
+                const response = await axios.get(`${import.meta.env.VITE_BASE_URL}/api/expenses`);
                 console.log(response.data);
                 setExpenses(response.data);
             } catch (error) {

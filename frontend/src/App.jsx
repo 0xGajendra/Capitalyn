@@ -1,6 +1,7 @@
 
 // import toast, { Toaster } from 'react-hot-toast';
 
+import { configDotenv } from "dotenv"
 import AddExpense from "./components/AddExpense/AddExpense"
 import AllExpenses from "./components/Allexpenses/AllExpenses"
 import DisplayExpense from "./components/DisplayExpense/DisplayExpense"
