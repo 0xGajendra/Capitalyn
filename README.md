@@ -1,1 +1,1 @@
-# Finance-Manager
+Capitalyn is your goto finance manager
